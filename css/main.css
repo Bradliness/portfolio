@@ -1,0 +1,104 @@
+/***** base styles *****/
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * R
+ emove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+  textarea {
+    resize: vertical;
+}
+  html {
+  	font-size: 16px;
+}
+
+header {
+  display:inline-block;
+  float:right;
+  margin-right: 10%;
+}
+
+
+.nav {
+  float: right;
+  /*padding: 3em, 3em; */
+}
+
+.nav ul li {
+  text-decoration: none;
+  font-size: 1.7em;
+  display:inline-block;
+  padding-bottom: 3em;
+  color: #2e4733;
+  float: right;
+  padding: 3em, 3em;
+  padding-left: 10%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.title {
+  display:flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding:3em;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  float:left;
+}
+
+.myface {
+  float:right;
+  resize: 25%;
+  opacity: 60%;
+  padding-left: 8%;
+}
+
+body {
+  display:flex;
+  justify-content: center;
+  background: linear-gradient(-45deg, #15b393, #7fb381, #7fb2b3,#8250e6);
+  background-size: 400% 400%;
+  animation: gradient 22s ease infinite;
+  font-family: 'Josefin Sans', sans-serif;
+}
