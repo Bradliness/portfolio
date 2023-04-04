@@ -28,8 +28,7 @@ video {
 }
 
 /*
- * R
- emove default fieldset styles.
+ * Remove default fieldset styles.
  */
 
 fieldset {
@@ -49,56 +48,84 @@ fieldset {
   	font-size: 16px;
 }
 
-header {
-  display:inline-block;
-  float:right;
-  margin-right: 10%;
-}
-
-
-.nav {
-  float: right;
-  /*padding: 3em, 3em; */
-}
-
-.nav ul li {
-  text-decoration: none;
-  font-size: 1.7em;
-  display:inline-block;
-  padding-bottom: 3em;
-  color: #2e4733;
-  float: right;
-  padding: 3em, 3em;
-  padding-left: 10%;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.title {
-  display:flex;
-  justify-content: center;
-  font-size: 1.5em;
-  padding:3em;
-}
-
-.about {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  float:left;
-}
-
-.myface {
-  float:right;
-  resize: 25%;
-  opacity: 60%;
-  padding-left: 8%;
-}
-
 body {
-  display:flex;
+  height: 45%;
+  /*display:flex;*/
   justify-content: center;
   background: linear-gradient(-45deg, #15b393, #7fb381, #7fb2b3,#8250e6);
   background-size: 400% 400%;
   animation: gradient 22s ease infinite;
   font-family: 'Josefin Sans', sans-serif;
+
+
 }
+
+header {
+  height:120px;
+}
+
+.full-width {
+  display: flex;
+  width:1000px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+  display:inline-block;
+  margin-right: 10%;
+/*  padding: 1em; */
+}
+
+nav ul li {
+  text-decoration: none;
+  font-size: 1.7em;
+  display:flex;
+  color: #2e4733;
+  float: right;
+  padding-left: 23px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+  display: flex;
+}
+
+nav ul li a {
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 22px;
+  padding-left: 25px;
+  padding-right: 30px;
+}
+
+ .title {
+  display:flex;
+  justify-content:space-between;
+  font-size: 1.5em;
+  font-family: 'Josefin Sans', sans-serif;
+    color: #2e4733;
+  padding:3em;
+}
+
+  .about {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  float:left; *
+}
+
+.myface {
+  display:flex;
+  float:right;
+  resize:inherit;
+  opacity: 60%;
+  padding-left: 8%;
+  padding-right:15%;
+}
+
+img {
+   -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+  filter: blur(2px);
